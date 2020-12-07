@@ -13,8 +13,7 @@ WD=-5
 K=10000
 WORKERS=12
 EXP="/home/ainedineen/blurry_vision/blurry_vision_deepcluster/deepcluster_alexnet_ImageNet/test/outmodel_deepcluster_alexnet_ImageNet"
-PYTHON="/opt/anaconda3/envs/blurry_vision/bin/python"
-
+PYTHON="/opt/anaconda3/envs/dc_p27/bin/python"
 
 ${PYTHON} main.py ${DIR} --exp ${EXP} --arch ${ARCH} \
   --lr ${LR} --wd ${WD} --k ${K} --sobel --verbose --workers ${WORKERS}
